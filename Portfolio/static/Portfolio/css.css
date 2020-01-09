@@ -1,0 +1,223 @@
+    @import url('https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap');
+    body{
+        font-family: 'Reem Kufi', sans-serif;
+        background-color: black;
+        color: #eee;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(205, 15, 196);
+    }
+    h2{
+        font-size: 200%;
+        color: rgb(205, 14, 245);
+    }
+   .navbar{
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgb(204, 0 , 18);
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+        z-index: 10;
+   }
+   .navbar > ul{
+        display: flex;
+        margin-left: 2rem;
+        list-style-type:none;
+   }
+   .navbar > ul a:hover{
+        background: rgb(2,52,98);
+        transition: background 0.6s;
+
+   }
+   .navbar > ul a{
+    color: rgb(203,255,209);
+    display: block;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+   }
+   #welcome-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        background-image: linear-gradient(20deg ,rgb(3, 3, 97), rgb(1,59,1) , rgb(100, 0 , 1));
+   }
+   #welcome-section > h1 {
+        font-size: 340%;
+        align-self: center;
+   }
+   #welcome-section > p{
+        font-size: 130%;
+        align-self: center;
+   }
+   #projects{
+        background: linear-gradient(40deg,  rgb(10,10, 87), rgb(5, 5, 67) ,rgb(1,1,48));
+   }
+   .img{
+        max-width: 400px;
+        height: 350px;
+        border: solid;
+        border: rgb(105, 19, 244);
+        border-radius: 4px;
+        margin: 10px;
+   }
+   .prjbody{
+        display: grid;
+        grid-template-columns :repeat(auto-fit, minmax(340px, 1fr));
+        grid-gap: 2rem;
+   }
+   .prj{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        transition: transform 0.2s ease-out;
+   }
+   .prj:hover{
+        transform: translateY(4px);
+   }
+   .prj > p {
+        text-align: center;
+   }
+   .project-tile{
+        position: relative;
+        top: 10px;
+        font-size: 230%;
+        height: 90px;
+        padding: 4rem 2rem;
+        align-content: center;
+        max-width: 640px;
+        text-align: center;
+        margin: auto;
+        color: rgb(255, 220, 250);
+   }
+   .Link{
+        text-align: center;
+        width: 700px;
+        height: 300px;
+        margin: 50px auto;
+        padding: 10px;
+   }
+   .profile-link{
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+   }
+   .links{
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px;
+        transition: transform 0.3s ease-out;
+   }
+   .links:hover{
+        transform: translateY(8px);
+   }
+   #link > header > p{
+        font-size: 20px;
+        color: rgb(76, 74, 244);
+   }
+   @media (max-width: 700px){
+        #welcome-section > h1 {
+            font-size: 180%;
+            align-self: center;
+        }
+        .Link{
+            width: 300px;
+            height: 300px;
+        }
+        .links{
+            padding: 2px;
+        }
+   }
+   .loading{
+        display: flex;
+        width: 400px;
+        height: 200px;
+        position: relative;
+        top: 150px;
+        right: 40px;
+   }
+   .imgload{
+        align-content: center;
+        width: 100px;
+        height: 80px;
+        border-radius: 50%;
+        animation-name: Rotate;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+   }
+   @keyframes Rotate {
+        50%{
+         transform: rotate( -110deg);
+        }
+   }
+   .loading > h2 {
+        font-size: 25px;
+        position: relative;
+        top: 9px;
+        color: rgb(151, 254, 126);
+   }
+   .load{
+        width: 10px;
+        height: 10px;
+        background: linear-gradient(40deg, #ffcccc, #ccffff);
+        border-radius: 50%;
+        margin: 3px;
+        position: relative;
+        top : 37px;
+        right: 10px;
+   }
+   .load1{
+        animation-name: transparent1;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+   }
+   .load2{
+        animation-name: transparent2;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+   }
+   .load3{
+        animation-name: transparent3;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+   }
+   @keyframes transparent1{
+        20%{
+            opacity: 0;
+        }
+   }
+   @keyframes transparent2{
+        50%{
+            opacity: 0;
+        }
+   }
+   @keyframes transparent3{
+        80%{
+            opacity: 0;
+        }
+   }
+   #projects > header > div{
+        width: 60%;
+        height: 3px;
+        background: white;
+        margin: 2px auto;
+        position: relative;
+        bottom: 90px;
+   }
+   @media (max-width: 1290px ){
+       .loading{
+            position: relative;
+            right: 100px;
+       }
+   }

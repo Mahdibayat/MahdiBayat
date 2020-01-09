@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>portfolio</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Portfolio/css.css' %}">
+</head>
+<body>
+<main>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#welcome-section">درباره</a></li>
+            <li><a href="#projects">کارها</a></li>
+            <li><a href="#Link">ارتباط</a></li>
+            <li><a href="/admin/">ورود</a></li>
+        </ul>
+    </nav>
+    <!-- welcome area -->
+    <section id="welcome-section">
+        <h1>خوش آمدین به پروفایل مهدی بیات</h1>
+        <p>طراح سایت و وبلاگ</p>
+    </section>
+    <!-- project area -->
+    <section id="projects">
+        <header>
+            <h2 class="project-tile">بعضی از نمونه کار ها</h2>
+            <div></div>
+        </header>
+        <div class="prjbody">
+            <div class="prj">
+                <a href="https://codepen.io/Mahdibayat72/full/oNgYBGQ">
+                    <img class="img" src="http://uupload.ir/files/ob6b_screen_shot_1398-09-28_at_22.01.02.png"
+                    alt="Prj1"></a>
+                <p>فرم ثبت نام</p>
+            </div>
+            <div class="prj">
+                <a href="https://codepen.io/Mahdibayat72/full/eYmdQLr">
+                    <img class="img" src="http://uupload.ir/files/lvv2_screen_shot_1398-09-28_at_22.05.34.png"
+                         alt="Prj2"></a>
+                <p>بیوگرافی</p>
+            </div>
+            <div class="prj">
+                <a href="https://codepen.io/Mahdibayat72/full/MWYJoay">
+                    <img class="img" src="http://uupload.ir/files/8la3_screen_shot_1398-09-28_at_22.08.13.png"
+                     alt="Prj3"></a>
+                <p>سایت مزون byt</p>
+            </div>
+            <div class="prj">
+                <a href="https://codepen.io/Mahdibayat72/full/oNgZgWO">
+                    <img class="img" src="http://uupload.ir/files/vqf0_screen_shot_1398-09-28_at_22.10.04.png"
+                     alt="Prj4"></a>
+                <p>خلاصه یک کتاب</p>
+            </div>
+            <article class="loading">
+                <div><img class="imgload" src="http://uupload.ir/files/h8q1_dast.png" alt="loading"></div>
+                <a href="https://codepen.io/Mahdibayat72"><h2>ادامه دارد</h2></a>
+                <div class="load load1" ></div>
+                <div class="load load2"></div>
+                <div class="load load3"></div>
+            </article>
+        </div>
+    </section>
+    <!-- content -->
+    <section class="Link" id="Link">
+        <header>
+            <h2>بی‌صبرانه مشتاق همکاری هستم</h2>
+            <p>پل های ارتباطی :</p>
+        </header>
+        <div class="profile-link">
+            <div class="links">
+                <a href="https://github.com/Mahdibayat">
+                    <img src="https://img.icons8.com/nolan/64/000000/github.png" alt="github">Github</a>
+            </div>
+            <div class="links">
+                <a href="https://www.facebook.com/profile.php?id=100002034083290">
+                    <img src="https://img.icons8.com/nolan/64/000000/facebook-new.png" alt="FB">Facebook</a>
+            </div>
+            <div class="links">
+                <a href="mailto:mahdibayat72@hotmail.com">
+                    <img src="https://img.icons8.com/nolan/64/000000/email.png" alt="email">Email</a>
+            </div>
+            <div class="links">
+                <a href="http://t.me/shadowbld.com">
+                    <img src="https://img.icons8.com/nolan/64/000000/telegram-app.png" alt="telegram">Telegram</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</main>
+</body>
+</html>
