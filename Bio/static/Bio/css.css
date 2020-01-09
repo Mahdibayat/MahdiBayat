@@ -1,0 +1,228 @@
+    body{
+        text-align: center;
+        margin: 15px 8px 15px 8px;
+        background:linear-gradient(40deg, #ffcccc, #ccffff);
+        height: 100%;
+    }
+    .header{
+        display: grid;
+        grid-template-columns: 1fr 200px 1fr;
+    }
+    .wellcome{
+        grid-column: 2/3;
+        justify-self: center;
+        align-self: center;
+        margin-left: 30px;
+    }
+    .logo{
+        float: left;
+        width: 200px;
+        margin-bottom: -55px;
+        border-radius: 15px;
+    }
+    .LOGO{
+        margin-left: 15px;
+        grid-column: 1/2;
+        justify-self: start;
+    }
+    .textlogo{
+        float:left;
+        position : absolute;
+        margin-top: 82px;
+        margin-left: 5px;
+    }
+    .itnog{
+        width:110px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+    .RT{
+        grid-column: 3/4;
+        justify-self: end;
+        align-self: center;
+    }
+    .Main{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 60px 300px 350px;
+    }
+    .img{
+        width: 180px;
+        grid-row: 2/3;
+        align-self: start;
+    }
+    .fig{
+        grid-column:1/2;
+    }
+    .matlab {
+        grid-column: 2/3;
+        text-align: right;
+        margin-right: 15px;
+        grid-row: 1/5;
+    }
+    .music{
+        grid-column:1/2;
+        grid-row: 1/2;
+        align-self: center;
+    }
+    legend {
+        margin-left: 150px;
+    }
+    .nazar{
+        text-align: right;
+        padding: 5px;
+        grid-row: 3/4;
+    }
+    .survey{
+        border-radius: 15px;
+    }
+    .radio{
+        float:right;
+    }
+    .heart{
+        position: absolute;
+        margin-left: 20px;
+        width: 50px;
+        height: 50px;
+        background: rgb(255, 48, 102);
+        animation-name: beat;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        transform: scale(0.8) rotate(-45deg);
+    }
+    @keyframes beat{
+        50%{ transform: scale(0.6) rotate(-45deg); }
+    }
+    .heart::after{
+        content:"";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: rgb(255, 48, 102);
+        margin-left: -25px;
+        border-radius: 50%;
+    }
+    .heart::before{
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: rgb(255, 48, 102);
+        margin-left: -50px;
+        margin-top: -25px;
+        border-radius: 50%;
+    }
+    .submitbtn{
+        padding: 3px;
+        border-radius: 5px;
+        width: 80px;
+    }
+    .textarea{
+        direction:rtl;
+    }
+    .submitbtn:hover{
+        animation-name: submit;
+        animation-duration: 600ms;
+        animation-fill-mode: forwards;
+    }
+    .footer{
+        height: 150px;
+        margin: 10px;
+        background:linear-gradient( 40deg, rgb(1, 1, 48), rgb(54, 154, 247), rgb(255, 100, 105), rgb(254, 254, 86));
+        border-radius: 15px;
+    }
+    .tah{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    .moon{
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-top: 30px;
+        margin-left: 40px;
+        box-shadow: -10px -4px 0px 0px white;
+        transform: scale(1.4);
+        grid-column: 1/2;
+        justify-self: start;
+    }
+    .star{
+        color: white;
+        position: absolute;
+        margin-left: 70px;
+        margin-top: 53px;
+        transform: scale(1.5);
+    }
+    .contact{
+        margin-top: -100px;
+        direction: rtl;
+        grid-column: 2/3;
+        color: white;
+        float: top;
+    }
+    .nav{
+        grid-column: 3/4;
+        justify-self: end;
+        padding: 15px;
+        direction: rtl;
+
+    }
+    @keyframes submit{
+        0% {
+            background-color: rgb(204, 204, 251);
+        }
+        100%{
+            background-color: rgb(54, 154, 247);
+        }
+    }
+    @media (max-width: 550px) {
+        .header {
+            grid-template-columns: 1fr;
+            grid-template-rows: 150px 150px 150px;
+        }
+
+        .RT {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            justify-self: center;
+            align-self: center;
+        }
+
+        .wellcome {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            justify-self: center;
+            align-self: center;
+            margin-top: -90px;
+        }
+
+        .LOGO {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            justify-self: center;
+            align-self: center;
+            margin-top: -175px;
+        }
+
+        .Khat1 {
+            margin-top: -60px;
+        }
+
+        .Main {
+            display: block;
+        }
+
+        .tah {
+            display: block;
+        }
+
+        .footer {
+            height: 250px;
+        }
+
+        .contact {
+            margin-right: 15px;
+        }
+    }
