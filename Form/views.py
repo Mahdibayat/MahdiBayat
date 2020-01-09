@@ -3,5 +3,5 @@ from __future__ import unicode_literals
 from django.shortcuts import render
 
 
-def index(request):
-    return render(request, 'Portfolio/html.html')
+def FormView(request):
+    return render(request, 'Form/html.html')

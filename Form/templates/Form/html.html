@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <title>فرم‌ٍثبت‌نام</title>
+      {% load static %}
+      <link rel="stylesheet" href="{% static 'Form/css.css' %}">
+</head>
+<body>
+ <header class="Header">
+    <h1 id="title">فرم ثبت‌نام</h1>
+     <p id="description">خوش‌آمدین، با ثبت نظر به ما در جهت پیشرفت کمک کنین، ممنون</p>
+ </header>
+ <main class="Main">
+     <form class="Form" id="survey-form">
+         <section class="etelaat">
+             <p>نام و نام خانوادگی :</p>
+             <input id="name" class="txtinput" type="text" name="نام" placeholder="نام و نام خانوادگی" required>
+             <p>ایمیل :</p>
+             <input id="email" class="txtinput" type="email" name="ایمیل" placeholder="نام و نام خانوادگی" required>
+             <p>شماره تلفن همراه</p>
+             <input class="txtinput" type="number" name="شماره‌تلفن" placeholder="...09" required>
+         </section>
+         <section class="sisos">
+             <p>از چه سیستم عاملی استفاده میکنید؟</p>
+             <label class="Padding" for="win"><input type="radio" id="win" name="os" value="ویندوز">ویندوز</label>
+             <label class="Padding" for="mos"><input type="radio" id="mos" name="os" value="مک او‌اس">مک او‌اس</label>
+             <label class="Padding" for="lin"><input type="radio" id="lin" name="os" value="ویندوز">لینوکس</label><br><br>
+             <label class="Padding" for="think"><input type="checkbox" name="think" value="best-notbest" id="think">فکر میکنید بهترین سیستم عامل رو استفاده میکنید؟</label>
+         </section>
+         <section class="nazar">
+             <p>کدام قسمت سایت نظرتون رو جلب کرد؟</p>
+             <label class="Padding" for="tarahi"><input id="tarahi" name="tarahi" type="checkbox">طراحی سایت</label>
+             <label class="Padding" for="text"><input id="text" name="tarahi" type="checkbox">نحوه بیان</label>
+             <label class="Padding" for="texti"><input id="texti" name="tarahi" type="checkbox">مطالب</label><br><br>
+             <p>نکته ای انتقادی پیشنهادی :</p><textarea class="textarea" placeholder="اگه چیز دیگه ای مد نظرتونه"></textarea>
+         </section>
+         <button class="BTN" type="submit">ثبت</button>
+     </form>
+ </main>
+</body>
+</html>
