@@ -3,6 +3,7 @@
         font-family: 'Reem Kufi', sans-serif;
         background-color: black;
         color: #eee;
+        overflow-x: hidden;
     }
     a{
         text-decoration: none;
@@ -14,38 +15,39 @@
     }
    .navbar{
         display: flex;
-        justify-content: flex-end;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        background: rgb(204, 0 , 18);
-        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-        z-index: 10;
+        background: #800000;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.8);
+        z-index: 2;
    }
    .navbar > ul{
         display: flex;
-        margin-left: 2rem;
         list-style-type:none;
    }
    .navbar > ul a:hover{
-        background: rgb(2,52,98);
-        transition: background 0.6s;
-
+        transition: 500ms;
+        background-color: rgb(2,52,98);
+   }
+   .navbar > ul a:active{
+       transition: 300ms;
+       transform: translateY(2px) scale(0.92);
    }
    .navbar > ul a{
-    color: rgb(203,255,209);
-    display: block;
-    padding: 0.5rem 2rem;
-    text-decoration: none;
+        color: rgb(203,255,209);
+        display: block;
+        padding: 0.5rem 2rem;
+        text-decoration: none;
    }
    #welcome-section{
         display: flex;
+        text-align: center;
         flex-direction: column;
         justify-content: center;
-        flex-wrap: wrap;
         align-content: center;
-        width: 100%;
+        width: auto;
         height: 100vh;
         background-color: black;
         background-image: linear-gradient(20deg ,rgb(3, 3, 97), rgb(1,59,1) , rgb(100, 0 , 1));
@@ -71,8 +73,11 @@
    }
    .prjbody{
         display: grid;
-        grid-template-columns :repeat(auto-fit, minmax(340px, 1fr));
+        grid-template-columns :repeat(auto-fit, minmax(400px, 1fr));
         grid-gap: 2rem;
+        padding: 0 100px;
+        height: auto;
+        justify-content: center;
    }
    .prj{
         display: flex;
@@ -141,8 +146,6 @@
         width: 400px;
         height: 200px;
         position: relative;
-        top: 150px;
-        right: 40px;
    }
    .imgload{
         align-content: center;
