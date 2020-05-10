@@ -93,7 +93,7 @@
          grid-gap: 10px;
          width: 90%;
          justify-items: center;
-          margin: auto;
+         margin: auto;
     }
 
     .prj {
@@ -167,6 +167,7 @@
               padding: 2px;
          }
     }
+
     #projects>header>div {
          width: 60%;
          height: 3px;
@@ -182,7 +183,8 @@
               right: 48;
          }
     }
-    #backG{
+
+    #backG {
          position: absolute;
          right: 0;
          z-index: -10;
